@@ -1,0 +1,9 @@
+body{
+    background-color: azure;
+}
+.container{
+    height: 10vh;
+    width: auto;
+    color: blue;
+    background-color: aliceblue;
+}
