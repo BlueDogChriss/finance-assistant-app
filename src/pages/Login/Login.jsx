@@ -61,7 +61,7 @@ export default function Login() {
                             className="submit-btn"
                             // onClick={handleSubmit}
                         >
-                            <Link to="/home">
+                            <Link to="/Home">
                                 <ExitToAppIcon /> Login</Link>
                         </button>
                         <button
@@ -69,7 +69,7 @@ export default function Login() {
                             className="submit-btn"
                             // onClick={handleSubmit}
                         >
-                            <Link to="/register">
+                            <Link to="/Register">
                                 <PersonIcon /> Register</Link>
                         </button>
                     </div>

@@ -5,12 +5,12 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 export const SidebarData = [
     {
         title: "Profil",
-        path: "/profile",
+        path: "/Profile",
         icon: <PersonIcon/>
     },
     {
         title: "Tips Calculator",
-        path: "/tips",
+        path: "/Tips",
         icon: <CalculateIcon />
     }
 ];

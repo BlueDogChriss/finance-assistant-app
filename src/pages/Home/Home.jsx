@@ -1,13 +1,21 @@
 import React from 'react';
-import Navbar from '../../components/Sidebar/Sidebar';
-
+import Logo from '../../assets/Logo_finance_assistant_app.png'
+import "./Home.css"
 
 function Home(){
 
   return (
-    <>
-      <h1>Home</h1>
-    </>
+          <div className="home">
+            <div className="home-container">
+                <div className="home-image-wrapper">
+                    <img
+                        src={Logo}
+                        alt=""
+                        className="landing-image"
+                    />
+                </div>
+            </div>
+        </div>
   );
 }
 

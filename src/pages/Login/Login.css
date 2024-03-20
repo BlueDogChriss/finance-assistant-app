@@ -124,6 +124,7 @@ a, .submit-btn {
 .flex{
     display: flex;
     align-items: center;
-    justify-content: center;
-    space-between: 1rem;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* space-between: 1rem; */
 }
