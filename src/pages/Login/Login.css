@@ -11,7 +11,7 @@
     flex-direction: column;
     padding: 50px 100px;
     text-align: center;
-    background: #b0d8ff;
+    background: #6cb1f6;
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.36);
 }
@@ -19,12 +19,16 @@
 .login__container > img {
     object-fit: contain;
     height: 200px;
-    margin-bottom: 40px;
 }
 
-.login__container > a {
-    color: #757575;
-    text-decoration: none;
+.logo-name{
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:3rem ;
+    font-weight: 800;
 }
 
 .form-group {
@@ -45,7 +49,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-.form-group select {
+.form-group input::placeholder{
+    color: #454444;
+}
+
+/* .form-group select {
     -webkit-appearance: none;
     margin: 10px 0;
     padding: 10px 40px;
@@ -58,16 +66,16 @@
     cursor: pointer;
     font-family: inherit;
     transition: all 150ms ease;
-}
+} */
 
-.form-group select option {
+/* .form-group select option {
     color: #223254;
-}
+} */
 
 .form-group select:focus {
     outline: none;
-    border-color: #07f;
-    box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+    border-color: #fda677;
+    box-shadow: 0 0 0 2px #fda688;
 }
 
 .form-group .form-icon {
@@ -75,21 +83,32 @@
     z-index: 2;
 }
 
-.login__container .submit-btn {
+.login__container .submit-btn{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 102px;
+    font-size: 1em;
+    font-weight: 500;
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
     border: none;
-    border-radius: 20px;
-    background: rgb(221, 131, 248);
-    color: #fff;
+    border-radius: 8px;
+    background: #fda677;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s ease;
     margin-right: 10px;
+    text-decoration: none;
+}
+a, .submit-btn {
+    color: #fff;
+    text-decoration: none;
+}
+
+.password-reset{
+    color: #fff; 
+    font-weight: bold;
 }
 
 .login__container .submit-btn:active {

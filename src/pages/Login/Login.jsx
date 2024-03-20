@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import './Login.css'
-import Logo from "../../assets/Bruno_Coin_Spray.png";
+import Logo from "../../assets/Logo_finance_assistant_app.png";
 import EmailIcon from "@mui/icons-material/Email";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
@@ -32,6 +32,10 @@ export default function Login() {
                     onSubmit={e => e.preventDefault()}
                 >
                     <img src={Logo} alt="Logo_Finance_App" className="logo" />
+                    <div className="logo-name">
+                    <h2>Finance Asistant App</h2>
+                    </div>
+                    
                     <div className="form-group">
                         <EmailIcon className="form-icon" />
                         <input
@@ -50,7 +54,7 @@ export default function Login() {
                             onChange={e => setPassword(e.target.value)}
                         />
                     </div>
-                    <Link to="/reset-password">Ai uitat parola?</Link>
+                    <Link className="password-reset" to="/reset-password">Ai uitat parola?</Link>
                     <div className="flex">
                         <button
                             type="submit"
