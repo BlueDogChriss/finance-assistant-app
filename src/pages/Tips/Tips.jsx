@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Tips.css";
 
-// function Sidebar(props) {
-//     return (
-//         <div>
-//             <h1>{props.title}</h1>
-//         </div>
-//     );
-// }
 
 function Tips() {
     // State for storing bill total    
@@ -62,44 +55,48 @@ function Tips() {
     }, [bill, tip, split]);
 
     return (
-        <main>
-            {/* Bill total input */}
-            <label>Bill total</label>
-            <input
-                type="text"
-                placeholder={"0.00"}
-                value={bill}
-                onChange={handleBillChange}
-            />
+        <div className="main">
+            <div className="container">
+                <div className="content">
+                    {/* Bill total input */}
+                    <label>Bill total</label>
+                    <input
+                        type="text"
+                        placeholder={"0.00"}
+                        value={bill}
+                        onChange={handleBillChange}
+                    />
 
-            {/* Tip input */}
-            <label>Tip</label>
-            <input
-                type="text"
-                placeholder={"0.00"}
-                value={tip}
-                onChange={handleTipChange}
-            />
+                    {/* Tip input */}
+                    <label>Tip</label>
+                    <input
+                        type="text"
+                        placeholder={"0.00"}
+                        value={tip}
+                        onChange={handleTipChange}
+                    />
 
-            <div className="summary">
+                    <div className="summary">
 
-                {/* Split section */}
-                <div className="split">
-                    <label>Split</label>
-                    <div className="split-control">
-                        <button onClick={splitMinus}>-</button>
-                        <span>{split}</span>
-                        <button onClick={splitPlus}>+</button>
+                        {/* Split section */}
+                        <div className="split">
+                            <label>Split</label>
+                            <div className="split-control">
+                                <button onClick={splitMinus}>-</button>
+                                <span>{split}</span>
+                                <button onClick={splitPlus}>+</button>
+                            </div>
+                        </div>
+
+                        {/* Result section */}
+                        <div className="result">
+                            <label>Split total</label>
+                            <span>{splitTotal}</span>
+                        </div>
                     </div>
                 </div>
-
-                {/* Result section */}
-                <div className="result">
-                    <label>Split total</label>
-                    <span>{splitTotal}</span>
-                </div>
             </div>
-        </main>
+        </div>
     );
 }
 
