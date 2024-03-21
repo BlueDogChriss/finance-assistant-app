@@ -58,24 +58,25 @@ function Tips() {
         <div className="main">
             <div className="container">
                 <div className="content">
-                    {/* Bill total input */}
-                    <label>Bill total</label>
-                    <input
-                        type="text"
-                        placeholder={"0.00"}
-                        value={bill}
-                        onChange={handleBillChange}
-                    />
+                    <div>
+                        {/* Bill total input */}
+                        <label>Bill total</label>
+                        <input
+                            type="text"
+                            placeholder={"0.00"}
+                            value={bill}
+                            onChange={handleBillChange}
+                        />
 
-                    {/* Tip input */}
-                    <label>Tip</label>
-                    <input
-                        type="text"
-                        placeholder={"0.00"}
-                        value={tip}
-                        onChange={handleTipChange}
-                    />
-
+                        {/* Tip input */}
+                        <label>Tip</label>
+                        <input
+                            type="text"
+                            placeholder={"0.00"}
+                            value={tip}
+                            onChange={handleTipChange}
+                        />
+                    </div>
                     <div className="summary">
 
                         {/* Split section */}
